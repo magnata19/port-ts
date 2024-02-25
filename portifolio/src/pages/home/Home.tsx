@@ -1,4 +1,3 @@
-
 import { Fade } from "react-awesome-reveal";
 
 import { FaLinkedin } from "react-icons/fa";
@@ -6,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
@@ -17,8 +17,8 @@ const Home = () => {
         <Fade>
           <h3 className="text-slate-500 text-xl pt-2">Davidson Pacifico</h3>
         </Fade>
-          <Fade direction="up">
-        <div className="pt-6 flex justify-center">
+        <Fade direction="up">
+          <div className="pt-6 flex justify-center">
             <ul className="flex justify-beetween">
               <Link
                 className="text-4xl px-2 hover:text-[#3373a7]"
@@ -48,8 +48,9 @@ const Home = () => {
                 </li>
               </Link>
             </ul>
-        </div>
-          </Fade>
+          </div>
+          <Footer />
+        </Fade>
       </div>
     </div>
   );

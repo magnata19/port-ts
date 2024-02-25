@@ -16,17 +16,17 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 10);
   });
   return (
     <>
       {isLoading ? (
-        <div className="bg-zinc-950 flex justify-center items-center h-screen">
+        <div className="bg-zinc-950 flex justify-center items-center h-full">
           <HashLoader color={"#363636"} loading={isLoading} size={100} />
         </div>
       ) : (
         <BrowserRouter>
-          <div className="bg-slate-950 h-screen">
+          <div className="bg-gradient-to-b from-zinc-900 to-black min-h-screen">
             <Header />
             <Routes>
               <Route path="/home" element={<Home />} />

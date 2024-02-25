@@ -1,43 +1,71 @@
 import { Fade } from "react-awesome-reveal";
 
+import { FaBrain } from "react-icons/fa6";
+import { FaComputer } from "react-icons/fa6";
+
 import perfil from "../../assets/perfil.jpg";
-
-//icons
-import { FaReact } from "react-icons/fa"; //react
-import { FaNodeJs } from "react-icons/fa6"; //node
-import { SiSpringboot } from "react-icons/si"; //spring
-import { SiTailwindcss } from "react-icons/si"; //tailwind
-import { GrMysql } from "react-icons/gr"; //mysql
-
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiSpringboot, SiTailwindcss } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import Footer from "../footer/Footer";
 const SobreMim = () => {
   return (
     <>
-      <div className="bg-gradient-to-b from-zinc-900 to-black h-full bg-fixed">
-        <div className="pt-5 ">
-          <h1 className="text-center text-white text-2xl mt-3">
-            Olá, seja bem vindo(a).
-          </h1>
-          <div className="pt-20 px-8 ">
-              <h1 className="text-white text-3xl mb-4">Biografia: </h1>
-            <Fade className=" rounded-xl">
-              <p className="font-light text-[18px] tracking-[1px] text-white">
+      <div className="py-5">
+        {" "}
+        {/**container geral */}
+        <div className="py-10 px-8 w-full">
+          <div>
+            <Fade direction="left" className="text-3xl text-white text-center">
+              <span>Sejam bem-vindos(as)!</span>
+            </Fade>
+          </div>
+          <div className="border-b-[1px]">
+            <Fade direction="left" className=" rounded-xl mt-5 whitespace-normal break-normal">
+              <p className="font-light text-[20px] tracking-[1px] text-white ">
                 Me chamo Davidson Pacifico, tenho 23 anos e sou natural de
                 Ubatuba-SP. Sou uma pessoa apaixonada por tecnologia, acho que
                 ela nos proporciona coisas únicas e isso é uma das coisas que me
                 fascina nela. Gosto muito de viagens, comida(principalmente) e
                 também de música.
               </p>
+              <div className="w-[250px] mx-auto mb-5">
+                <img src={perfil} alt="foto de perfil" />
+              </div>
             </Fade>
           </div>
-          <Fade className="border-b-[1px] py-6 w-[250px] m-auto">
-            <img src={perfil} alt="foto de perfil" />
-          </Fade>
-        </div>
-        <div className="mt-6 ">
-            <h1 className="text-3xl text-white opacity-80 tracking-[1px] font-light">
-              Tecnologias
-            </h1>
-            <div className=" h-full justify-between bg-gradient-to-b from-zinc-900 to-black bg-fixed">
+          <div className="text-white">
+            <Fade direction="left">
+              <div className="text-3xl text-white  mt-4">
+                <div className="flex items-center justify-center gap-2">
+                  <span>Habilidades</span>
+                  <span className="text-2xl text-red-500">
+                    <FaBrain />
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-5 border-b-[1px]">
+                <ul className="flex flex-col gap-2 mb-5">
+                  <li>- Proatividade</li>
+                  <li>- Trabalho em equipe.</li>
+                  <li>- Facilidade em aprender novas tecnologias.</li>
+                  <li>- Vontade de aprender.</li>
+                  <li>- Conhecimento em frontend.</li>
+                  <li>- Conhecimento em backend.</li>
+                  <li>- Conhecimento em arquitetura.</li>
+                </ul>
+              </div>
+            </Fade>
+          </div>
+          <div className="text-3xl text-white  mt-4 flex flex-col gap-3">
+            <div className="flex items-center justify-center gap-2">
+              <span>Tecnologias</span>
+              <span>
+                <FaComputer />
+              </span>
+            </div>
+            <div>
               <Fade direction="left" className="text-white text-[25px]">
                 <div className="flex items-center mb-2">
                   <FaReact className="text-[25px] mr-1 z-20 text-blue-600" />
@@ -52,7 +80,9 @@ const SobreMim = () => {
                   com parâmetros; Utilização de redux;
                 </div>
               </Fade>
+            </div>
 
+            <div>
               <Fade direction="left" className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <FaNodeJs className="text-green-700 mr-1 text-[25px]" />
@@ -67,7 +97,9 @@ const SobreMim = () => {
                   bancos de dados;
                 </div>
               </Fade>
+            </div>
 
+            <div>
               <Fade direction="left" className="text-white ">
                 <div className="flex items-center">
                   <SiSpringboot className="text-green-600 mr-1 text-[25px]" />
@@ -83,7 +115,9 @@ const SobreMim = () => {
                   estudos em microserviços e deploy em nuvem, utilizando AWS.
                 </div>
               </Fade>
+            </div>
 
+            <div>
               <Fade direction="left" className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <SiTailwindcss className="text-blue-500 mr-1 text-[25px]" />
@@ -98,7 +132,9 @@ const SobreMim = () => {
                   meu desempenho na hora de desenvolver.
                 </div>
               </Fade>
+            </div>
 
+            <div>
               <Fade direction="left" className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <GrMysql className="text-blue-300 mr-1" />
@@ -116,6 +152,8 @@ const SobreMim = () => {
               </Fade>
             </div>
           </div>
+        </div>
+        <Footer />
       </div>
     </>
   );

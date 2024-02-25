@@ -15,12 +15,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="p-3 fixed right-0 ">
-      <Menubar>
+      <Menubar >
         <MenubarMenu>
           <MenubarTrigger>
             <GrMenu className="hover:cursor-pointer text-3xl"/>
           </MenubarTrigger>
-          <MenubarContent>
+          <MenubarContent className="bg-slate-500 border-none">
             <MenubarItem>
               <Link to="/home">Home</Link>
             </MenubarItem>
