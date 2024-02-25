@@ -20,7 +20,7 @@ const Header = () => {
           </MenubarTrigger>
           <MenubarContent className="bg-slate-500 border-none">
             <MenubarItem>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </MenubarItem>
             <MenubarItem>
               <Link to="/about">Sobre Mim</Link>

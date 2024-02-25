@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 10);
+    }, 1500);
   });
   return (
     <>
@@ -29,7 +29,7 @@ const App = () => {
           <div className="bg-gradient-to-b from-zinc-900 to-black min-h-screen">
             <Header />
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/about" element={<SobreMim />} />
             </Routes>
           </div>
