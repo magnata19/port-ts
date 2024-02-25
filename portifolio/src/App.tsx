@@ -21,7 +21,7 @@ const App = () => {
   return (
     <>
       {isLoading ? (
-        <div className="bg-zinc-950 flex justify-center items-center h-full">
+        <div className="bg-zinc-950 flex justify-center items-center h-screen">
           <HashLoader color={"#363636"} loading={isLoading} size={100} />
         </div>
       ) : (
