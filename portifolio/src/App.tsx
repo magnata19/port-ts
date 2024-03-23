@@ -8,16 +8,20 @@ import HashLoader
 from "react-spinners/HashLoader";
 
 //hooks
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState(true);
+
+
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
   });
+
+
   return (
     <>
       {isLoading ? (
@@ -26,7 +30,7 @@ const App = () => {
         </div>
       ) : (
         <BrowserRouter>
-          <div className="bg-gradient-to-b from-zinc-900 to-black min-h-screen">
+          <div className="bg-gradient-to-b from-black to-zinc-900 min-h-screen">
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />

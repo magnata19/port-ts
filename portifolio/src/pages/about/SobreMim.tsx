@@ -15,27 +15,35 @@ const SobreMim = () => {
         {" "}
         {/**container geral */}
         <div className="py-10 px-8 w-full">
-          <div>
-            <Fade direction="left" className="text-3xl text-white text-center">
-              <span>Sejam bem-vindos(as)!</span>
-            </Fade>
-          </div>
-          <div className="border-b-[1px]">
-            <Fade direction="left" className=" rounded-xl mt-5 whitespace-normal break-normal">
-              <p className="font-light text-[20px] tracking-[1px] text-white ">
-                Me chamo Davidson Pacifico, tenho 23 anos e sou natural de
-                Ubatuba-SP. Sou uma pessoa apaixonada por tecnologia, acho que
-                ela nos proporciona coisas únicas e isso é uma das coisas que me
-                fascina nela. Gosto muito de viagens, comida(principalmente) e
-                também de música.
-              </p>
-              <div className="w-[250px] mx-auto mb-5">
-                <img src={perfil} alt="foto de perfil" />
+          <div className="h-screen flex flex-col justify-center items-center">
+              <div>
+                <Fade triggerOnce={true} duration={500}
+                  direction="up"
+                  className="text-3xl text-white text-center"
+                >
+                  <span>Sejam bem-vindos(as)!</span>
+                </Fade>
               </div>
-            </Fade>
+              <div className="border-b-[1px]">
+                <Fade triggerOnce={true} duration={500}
+                  direction="up"
+                  className=" rounded-xl mt-5 whitespace-normal break-normal"
+                >
+                  <p className="font-light text-[20px] tracking-[1px] text-white opacity-80">
+                    Me chamo Davidson Pacifico, tenho 23 anos e sou natural de
+                    Ubatuba-SP. Sou uma pessoa apaixonada por tecnologia, acho
+                    que ela nos proporciona coisas únicas e isso é uma das
+                    coisas que me fascina nela. Gosto muito de viagens,
+                    comida(principalmente) e também de música.
+                  </p>
+                  <div className="w-[250px] mx-auto mb-5 shadow-2xl">
+                    <img className="rounded-md" src={perfil} alt="foto de perfil" />
+                  </div>
+                </Fade>
+              </div>
           </div>
           <div className="text-white">
-            <Fade direction="left">
+            <Fade direction="up" triggerOnce={true} duration={500}>
               <div className="text-3xl text-white  mt-4">
                 <div className="flex items-center justify-center gap-2">
                   <span>Habilidades</span>
@@ -46,7 +54,7 @@ const SobreMim = () => {
               </div>
 
               <div className="mt-5 border-b-[1px]">
-                <ul className="flex flex-col gap-2 mb-5">
+                <ul className="flex flex-col gap-2 mb-5 opacity-80">
                   <li>- Proatividade</li>
                   <li>- Trabalho em equipe.</li>
                   <li>- Facilidade em aprender novas tecnologias.</li>
@@ -58,7 +66,7 @@ const SobreMim = () => {
               </div>
             </Fade>
           </div>
-          <div className="text-3xl text-white  mt-4 flex flex-col gap-3">
+          <div className="text-3xl text-white  mt-4 flex flex-col gap-10">
             <div className="flex items-center justify-center gap-2">
               <span>Tecnologias</span>
               <span>
@@ -66,14 +74,14 @@ const SobreMim = () => {
               </span>
             </div>
             <div>
-              <Fade direction="left" className="text-white text-[25px]">
+              <Fade direction="up" triggerOnce={true} duration={500} className="text-white text-[25px]">
                 <div className="flex items-center mb-2">
                   <FaReact className="text-[25px] mr-1 z-20 text-blue-600" />
                   <div className="text-[22px] font-light tracking-[1px]">
                     React
                   </div>
                 </div>
-                <div className="text-white tracking-[1px] font-light text-[18px]">
+                <div className="text-white tracking-[1px] font-light text-[18px] opacity-80">
                   Atualmente, uso muito react para desenvolver o front end de
                   minhas aplicações. Tenho uma excelente experiências com
                   consumos de APIs; Utilização de hooks; Como usar rotas , rotas
@@ -83,14 +91,14 @@ const SobreMim = () => {
             </div>
 
             <div>
-              <Fade direction="left" className="text-white text-[25px] ">
+              <Fade direction="up" triggerOnce={true} duration={500} className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <FaNodeJs className="text-green-700 mr-1 text-[25px]" />
                   <div className="font-light text-[22px] tracking-[1px]">
                     NodeJS
                   </div>
                 </div>
-                <div className="text-white tracking-[1px] font-light text-[18px]">
+                <div className="text-white tracking-[1px] font-light text-[18px] opacity-80">
                   NodeJs é uma tecnologia que acho simplesmente incrível. Nos
                   proporciona criar um servidor com uma praticidade imensa. Uso
                   para desenvolver minhas rotas; Criar minhas APIs; Conectar a
@@ -100,14 +108,14 @@ const SobreMim = () => {
             </div>
 
             <div>
-              <Fade direction="left" className="text-white ">
+              <Fade direction="up" triggerOnce={true} duration={500} className="text-white ">
                 <div className="flex items-center">
                   <SiSpringboot className="text-green-600 mr-1 text-[25px]" />
                   <div className="font-light text-[22px] tracking-[1px]">
                     Spring Boot
                   </div>
                 </div>
-                <div className="text-white tracking-[1px] font-light text-[18px]">
+                <div className="text-white tracking-[1px] font-light text-[18px] opacity-80">
                   Atualmente, venho estudando com muito foco o Spring Boot, com
                   ênfase em criações de APIs Restful, utilizando banco de dados
                   relacionais como o MySql; Usando conceitos de persistência de
@@ -118,14 +126,14 @@ const SobreMim = () => {
             </div>
 
             <div>
-              <Fade direction="left" className="text-white text-[25px] ">
+              <Fade direction="up" triggerOnce={true} duration={500} className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <SiTailwindcss className="text-blue-500 mr-1 text-[25px]" />
                   <div className="font-light text-[22px] tracking-[1px]">
                     Tailwind
                   </div>
                 </div>
-                <div className="font-light text-[18px] tracking-[1px]">
+                <div className="font-light text-[18px] tracking-[1px] opacity-80">
                   Há bastante tempo vinha utilizando CSS puro para desenvolver
                   meus projetos mas após descobrir tailwind isso mudou. Estou
                   muito feliz em usá-lo em minhas aplicações, pois melhora muito
@@ -135,14 +143,14 @@ const SobreMim = () => {
             </div>
 
             <div>
-              <Fade direction="left" className="text-white text-[25px] ">
+              <Fade direction="up" triggerOnce={true} duration={500} className="text-white text-[25px] ">
                 <div className="flex items-center">
                   <GrMysql className="text-blue-300 mr-1" />
                   <div className="font-light text-[22px] tracking-[1px]">
                     MySQL
                   </div>
                 </div>
-                <div className="font-light text-[18px] tracking-[1px]">
+                <div className="font-light text-[18px] tracking-[1px] opacity-80">
                   Uso o MySql como banco de dados, mas também tive contato com
                   banco de dados da oracle. Uso muito para executar querys para
                   criar tabelas, inserir dados nelas, alterar dados e junto a

@@ -9,7 +9,7 @@ import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
-    <div className=" bg-gradient-to-b from-zinc-800 to-[#000000] h-screen flex flex-column justify-center items-center">
+    <div className=" h-screen flex flex-column justify-center items-center">
       <div className="text-white text-5xl text-center tracking-widest">
         <Fade direction="down">
           <h1 className="text-2xl lg:text-5xl">Fullstack Developer</h1>

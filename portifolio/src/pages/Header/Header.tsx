@@ -5,27 +5,36 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import { useState } from "react";
 
 import { GrMenu } from "react-icons/gr";
+import { GrClose } from "react-icons/gr";
 
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  return (
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  }
+
+    return (
     <div className="p-3 fixed right-0 ">
-      <Menubar >
+      <Menubar className="border-none text-white shadow-2xl">
         <MenubarMenu>
-          <MenubarTrigger>
-            <GrMenu className="hover:cursor-pointer text-3xl"/>
+          <MenubarTrigger onClick={toggleMenu}>
+            {openMenu ?<GrClose className="hover:cursor-pointer text-3xl"/> : <GrMenu className="hover:cursor-pointer text-3xl"/>}
           </MenubarTrigger>
-          <MenubarContent className="bg-slate-500 border-none">
-            <MenubarItem>
-              <Link to="/">Home</Link>
+          <MenubarContent className="bg-zinc-950 border-none">
+            <MenubarItem >
+              <Link to="/" className="text-white hover:text-black">Home</Link>
             </MenubarItem>
             <MenubarItem>
-              <Link to="/about">Sobre Mim</Link>
+              <Link to="/about" className="text-white hover:text-black">Sobre Mim</Link>
             </MenubarItem>
-            <MenubarItem>Print</MenubarItem>
+            <MenubarItem className="text-white hover:text-black">Print</MenubarItem>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
