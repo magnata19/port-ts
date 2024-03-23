@@ -8,7 +8,7 @@ import HashLoader
 from "react-spinners/HashLoader";
 
 //hooks
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
