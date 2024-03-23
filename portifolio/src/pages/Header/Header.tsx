@@ -13,28 +13,39 @@ import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
-  }
+  };
 
-    return (
+  return (
     <div className="p-3 fixed right-0 ">
       <Menubar className="border-none text-white shadow-2xl">
-        <MenubarMenu>
+        <MenubarMenu >
           <MenubarTrigger onClick={toggleMenu}>
-            {openMenu ?<GrClose className="hover:cursor-pointer text-3xl"/> : <GrMenu className="hover:cursor-pointer text-3xl"/>}
+            {openMenu ? (
+              <GrClose className="hover:cursor-pointer text-3xl" />
+            ) : (
+              <GrMenu className="hover:cursor-pointer text-3xl" />
+            )}
           </MenubarTrigger>
           <MenubarContent className="bg-zinc-950 border-none">
-            <MenubarItem >
-              <Link to="/" className="text-white hover:text-black">Home</Link>
+            <MenubarItem>
+              <Link to="/" className="text-white hover:text-black font-mono">
+                Home
+              </Link>
             </MenubarItem>
             <MenubarItem>
-              <Link to="/about" className="text-white hover:text-black">Sobre Mim</Link>
+              <Link to="/about" className="text-white hover:text-black font-mono">
+                Sobre Mim
+              </Link>
             </MenubarItem>
-            <MenubarItem className="text-white hover:text-black">Print</MenubarItem>
+            <MenubarItem>
+              <Link to="/projects" className="text-white hover:text-black font-mono">
+                Projetos
+              </Link>
+            </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>

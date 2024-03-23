@@ -9,6 +9,7 @@ from "react-spinners/HashLoader";
 
 //hooks
 import { useState, useEffect } from "react";
+import Projects from "./pages/projects/Projects";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,11 +31,12 @@ const App = () => {
         </div>
       ) : (
         <BrowserRouter>
-          <div className="bg-gradient-to-b from-black to-zinc-900 min-h-screen">
+          <div className="bg-gradient-to-b from-black to-zinc-900 min-h-screen px-8 w-full font-mono">
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<SobreMim />} />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
           </div>
         </BrowserRouter>

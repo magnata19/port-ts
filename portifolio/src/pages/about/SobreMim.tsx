@@ -19,7 +19,7 @@ const SobreMim = () => {
               <div>
                 <Fade triggerOnce={true} duration={500}
                   direction="up"
-                  className="text-3xl text-white text-center"
+                  className="text-2xl text-white text-center"
                 >
                   <span>Sejam bem-vindos(as)!</span>
                 </Fade>
@@ -29,7 +29,7 @@ const SobreMim = () => {
                   direction="up"
                   className=" rounded-xl mt-5 whitespace-normal break-normal"
                 >
-                  <p className="font-light text-[20px] tracking-[1px] text-white opacity-80">
+                  <p className="font-thin text-[19px] tracking-[1px] text-white opacity-60 font-mono">
                     Me chamo Davidson Pacifico, tenho 23 anos e sou natural de
                     Ubatuba-SP. Sou uma pessoa apaixonada por tecnologia, acho
                     que ela nos proporciona coisas únicas e isso é uma das
@@ -69,7 +69,7 @@ const SobreMim = () => {
           <div className="text-3xl text-white  mt-4 flex flex-col gap-10">
             <div className="flex items-center justify-center gap-2">
               <span>Tecnologias</span>
-              <span>
+              <span className="text-amber-400">
                 <FaComputer />
               </span>
             </div>
