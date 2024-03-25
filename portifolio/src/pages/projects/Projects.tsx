@@ -16,20 +16,20 @@ const Projects = () => {
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="w-3/4 mx-auto">
-            <img src={reactGram} alt="" className="shadow-2xl rounded-md" />
+            <img src={reactGram} alt="" className="shadow-2xl rounded-md hover:cursor-pointer" />
             <div className="mt-5">
               <span className="text-white opacity-50 ">
                 ReactGram é um projeto que foi desenvolvido utilizando React,
                 nodeJS e mongoDB. Ele tem como finalidade ser uma "cópia" do
                 instagram. Você pode acessar ele clicando
               </span>
-              <Link to="https://frontend-xflf.vercel.app/login" target="_blank">
-                <span className="text-slate-100"> aqui!</span>
+              <Link to="https://frontend-xflf.vercel.app" target="_blank">
+                <span className="text-slate-100 hover:text-red-600 "> aqui!</span>
               </Link>
             </div>
           </div>
           <div className="w-3/4 mx-auto">
-            <img src={springJpa} alt="" className="shadow-2xl rounded-md"/>
+            <img src={springJpa} alt="" className="shadow-2xl rounded-md hover:cursor-pointer"/>
             <div className="mt-5">
               <span className="text-white opacity-50 ">
                 Essa é uma api feita com springboot, ao qual usei conceitos de
@@ -38,7 +38,7 @@ const Projects = () => {
                 projeto muito interessante que você pode acessar clicando
               </span>
               <Link to="https://github.com/magnata19/estudo-spring-data-jpa" target="_blank">
-                <span className="text-slate-100"> aqui!</span>
+                <span className="text-slate-100 hover:text-red-600"> aqui!</span>
               </Link>
             </div>
           </div>

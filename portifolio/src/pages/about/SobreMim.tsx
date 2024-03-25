@@ -14,7 +14,7 @@ const SobreMim = () => {
       <div className="py-5">
         {" "}
         {/**container geral */}
-        <div className="py-10 px-8 w-full">
+        <div className="py-10 px-8 w-full md:w-[70%] md:mx-auto">
           <div className="h-screen flex flex-col justify-center items-center">
               <div>
                 <Fade triggerOnce={true} duration={500}
