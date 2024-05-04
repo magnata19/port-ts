@@ -24,7 +24,7 @@ const SobreMim = () => {
                   <span>Sejam bem-vindos(as)!</span>
                 </Fade>
               </div>
-              <div className="border-b-[1px]">
+              <div className="border-b-[1px] md:border-none">
                 <Fade triggerOnce={true} duration={500}
                   direction="up"
                   className=" rounded-xl mt-5 whitespace-normal break-normal"
